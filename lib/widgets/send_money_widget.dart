@@ -59,7 +59,7 @@ class _SendMoneyWidgetState extends State<SendMoneyWidget> {
           ],),),
           Expanded(child: ContactsWidget(list: myNumberlist, title: "My account"))
         ],
-      )),
+      ))),
     );
   }
 
