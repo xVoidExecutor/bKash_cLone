@@ -87,7 +87,7 @@ class _ConfirmationWidgetState extends State<ConfirmationWidget> {
                       child: const Icon(Icons.send_rounded, color: Colors.white, size: 28),
                     ),
                     const SizedBox(width: 14),
-                    const Expanded(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                    Expanded(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
                       Text('Send Money', style: TextStyle(fontSize: 17, fontWeight: FontWeight.w600)),
                       SizedBox(height: 4),
                       Text('Transaction notification · Demo', style: TextStyle(color: Colors.black54, fontSize: 12)),
@@ -114,7 +114,7 @@ class _ConfirmationWidgetState extends State<ConfirmationWidget> {
                     CircleAvatar(radius: 32, backgroundColor: const Color(0xFFE4B19F),
                       child: const Text('R', style: TextStyle(fontSize: 26, color: Colors.white))),
                     const SizedBox(width: 16),
-                    const Expanded(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                    Expanded(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
                       Text('Ryan Reynolds', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500)),
                       SizedBox(height: 4),
                       Text('01XXXXXXXXX', style: TextStyle(fontSize: 16, color: Colors.black54)),
