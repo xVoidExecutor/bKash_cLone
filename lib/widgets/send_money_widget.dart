@@ -1,6 +1,5 @@
 import 'package:bkash/models/contact.dart';
 import 'package:bkash/widgets/contacts_widget.dart';
-import 'package:bkash/widgets/send_money_widget.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -49,8 +48,8 @@ class _SendMoneyWidgetState extends State<SendMoneyWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
-      body: Center(child: Column(
+      backgroundColor: const Color(0xFFF6F6F8),
+      body: SafeArea(child: Center(child: Column(
         children: [
           Card(color: Colors.white, margin: EdgeInsets.all(12), child: Column(children: [
             Row(children: [Expanded(child: Padding(padding: EdgeInsets.fromLTRB(12,8,12,4), child: Text("For", style: AppTheme.ntitleText,),))],),
@@ -60,7 +59,7 @@ class _SendMoneyWidgetState extends State<SendMoneyWidget> {
           ],),),
           Expanded(child: ContactsWidget(list: myNumberlist, title: "My account"))
         ],
-      ),),
+      )),
     );
   }
 
