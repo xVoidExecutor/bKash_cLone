@@ -190,7 +190,7 @@ class _ConfirmationWidgetState extends State<ConfirmationWidget> {
                 top: false,
                 child: Padding(
                   padding: EdgeInsets.symmetric(horizontal: 22, vertical: 16),
-                  child: Row(children: const [
+                  child: const Row(children: [
                     Expanded(child: Text('Back to Home', style: TextStyle(color: Colors.white, fontSize: 20))),
                     Icon(Icons.arrow_forward, color: Colors.white, size: 30),
                   ]),
