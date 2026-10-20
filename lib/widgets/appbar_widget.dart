@@ -22,6 +22,9 @@ class AppBarWidgetState extends State<AppBarWidget> {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      backgroundColor: const Color(0xFFE2136E),
+      elevation: 0,
+      toolbarHeight: 80,
       key: appBar_key,
       flexibleSpace: SafeArea(
         child: Padding(
@@ -60,10 +63,10 @@ class AppBarWidgetState extends State<AppBarWidget> {
                       onTap: animate,
                       child: Container(
                           width: 160,
-                          height: 28,
+                          height: 30,
                           decoration: BoxDecoration(
                               color: Colors.white,
-                              borderRadius: BorderRadius.circular(50)),
+                              borderRadius: BorderRadius.circular(10)),
                           child: Stack(alignment: Alignment.center, children: [
                             //Amount
                             AnimatedOpacity(
@@ -71,7 +74,7 @@ class AppBarWidgetState extends State<AppBarWidget> {
                                 duration: Duration(milliseconds: 500),
                                 child: Text('৳ 7500.25',
                                     style: TextStyle(
-                                        color: Colors.pink, fontSize: 14))),
+                                        color: const Color(0xFFE2136E), fontSize: 14))),
 
                             //Balance
                             AnimatedOpacity(
