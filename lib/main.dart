@@ -24,7 +24,28 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.pink,
+        primaryColor: const Color(0xFFE2136E),
+        colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.pink).copyWith(
+          primary: const Color(0xFFE2136E),
+          secondary: const Color(0xFFE2136E),
+        ),
+        scaffoldBackgroundColor: const Color(0xFFF6F6F8),
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Color(0xFFE2136E),
+          foregroundColor: Colors.white,
+          elevation: 0,
+          centerTitle: true,
+        ),
+        cardTheme: CardTheme(
+          color: Colors.white,
+          elevation: 1,
+          margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+        ),
+        inputDecorationTheme: const InputDecorationTheme(
+          focusedBorder: UnderlineInputBorder(borderSide: BorderSide(color: Color(0xFFE2136E))),
+          enabledBorder: UnderlineInputBorder(borderSide: BorderSide(color: Color(0xFFEAEAF0))),
+        ),
       ),
       home: const MyHomePage(title: 'bKash'),
     );
