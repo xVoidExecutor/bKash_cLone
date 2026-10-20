@@ -13,16 +13,16 @@ class DialogWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: const Color(0xFFF8F8FA),
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: const Color(0xFFF8F8FA),
         elevation: 0,
         automaticallyImplyLeading: false,
         actions: [
           Padding(
             padding: const EdgeInsets.only(top: 12.0, right: 12.0),
             child: InkWell(onTap: () {Navigator.pop(context);}, child: SizedBox(
-                width: 34, height: 34, child: Icon(Icons.close_sharp, size: 30, color: Colors.pink,)),),
+                width: 34, height: 34, child: Icon(Icons.close_sharp, size: 30, color: const Color(0xFFE2136E),)),),
           )
         ],
       ),
