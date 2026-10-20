@@ -69,10 +69,10 @@ class HomeBodyWidget extends StatelessWidget {
               decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
               margin: const EdgeInsets.symmetric(horizontal: 12),
               padding: const EdgeInsets.all(12),
-              child: const Row(children: [
-                Icon(Icons.grid_view_rounded, color: Color(0xFFE2136E), size: 19),
-                SizedBox(width: 8),
-                Text('Services', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700, color: Color(0xFF25252B))),
+              child: Row(children: [
+                const Icon(Icons.grid_view_rounded, color: Color(0xFFE2136E), size: 19),
+                const SizedBox(width: 8),
+                const Text('Services', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700, color: Color(0xFF25252B))),
               ]),
             ),
             Container(
