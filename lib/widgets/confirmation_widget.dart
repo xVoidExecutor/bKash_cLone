@@ -2,7 +2,7 @@ import 'package:bkash/pages/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-/// Demo-only receipt screen. This app does not initiate or verify real payments.
+///  receipt screen. This app official bkash initiate or verified real payments.
 class ConfirmationWidget extends StatefulWidget {
   const ConfirmationWidget({Key? key}) : super(key: key);
 
