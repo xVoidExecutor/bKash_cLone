@@ -37,11 +37,11 @@ class BottomNavigationBarWidgetState extends State<BottomNavigationBarWidget> {
   @override
   Widget build(BuildContext context) {
     return BottomAppBar(
-      color: Colors.pink,
+      color: const Color(0xFFE2136E),
       notchMargin: 6.0,
       shape: const CircularNotchedRectangle(),
       child: SizedBox(
-          height: 60,
+          height: 64,
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.spaceAround,
