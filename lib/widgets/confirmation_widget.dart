@@ -186,13 +186,13 @@ class _ConfirmationWidgetState extends State<ConfirmationWidget> {
                 MaterialPageRoute(builder: (_) => const MyHomePage(title: 'bKash')),
                 (route) => false,
               ),
-              child: const SafeArea(
+              child: SafeArea(
                 top: false,
                 child: Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 22, vertical: 16),
-                  child: const Row(children: [
-                    Expanded(child: Text('Back to Home', style: TextStyle(color: Colors.white, fontSize: 20))),
-                    Icon(Icons.arrow_forward, color: Colors.white, size: 30),
+                  padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 16),
+                  child: Row(children: [
+                    const Expanded(child: Text('Back to Home', style: TextStyle(color: Colors.white, fontSize: 20))),
+                    const Icon(Icons.arrow_forward, color: Colors.white, size: 30),
                   ]),
                 ),
               ),
