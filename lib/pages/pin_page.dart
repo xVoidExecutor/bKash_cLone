@@ -23,11 +23,12 @@ class _PinPageState extends State<PinPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: const Color(0xFFF6F6F8),
         resizeToAvoidBottomInset : false,
         appBar: AppBar(
           centerTitle: true,
           title: Text(widget.menu.title, style: AppTheme.actionBarText, textAlign: TextAlign.center,),
-          backgroundColor: Colors.pink,
+          backgroundColor: const Color(0xFFE2136E),
           actions: [
             Padding(
               padding: const EdgeInsets.only(top: 12.0, right: 12.0, bottom: 12.0),
@@ -72,7 +73,7 @@ class _PinPageState extends State<PinPage> {
                 Padding(padding: EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 16.0), child: TextField(
                   controller: referenceTextController,
                   keyboardType: TextInputType.text,
-                  cursorColor: Colors.transparent,
+                  cursorColor: const Color(0xFFE2136E),
                   textAlign: TextAlign.start,
                   style: AppTheme.nbodyText,
                   decoration: InputDecoration.collapsed(hintText: "Tap to add a note", hintStyle: AppTheme.nbodyText,),
