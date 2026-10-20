@@ -18,10 +18,11 @@ class _DetailsPageState extends State<DetailsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color(0xFFF6F6F8),
         appBar: AppBar(
           centerTitle: true,
           title: Text(widget.menu.title, style: AppTheme.actionBarText, textAlign: TextAlign.center,),
-          backgroundColor: Colors.pink,
+          backgroundColor: const Color(0xFFE2136E),
           actions: [
             Padding(
               padding: const EdgeInsets.only(top: 12.0, right: 12.0, bottom: 12.0),
