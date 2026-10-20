@@ -66,17 +66,6 @@ class HomeBodyWidget extends StatelessWidget {
         child: Column(
           children: [
             Container(
-              width: double.infinity,
-              margin: const EdgeInsets.fromLTRB(12, 0, 12, 10),
-              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-              decoration: BoxDecoration(color: const Color(0xFFFFF0F6), borderRadius: BorderRadius.circular(10), border: Border.all(color: const Color(0xFFF6C7DB))),
-              child: const Row(children: [
-                Icon(Icons.info_outline, size: 17, color: Color(0xFFE2136E)),
-                SizedBox(width: 8),
-                Expanded(child: Text('DEMO MODE  •  No real money is transferred', style: TextStyle(color: Color(0xFF9E174F), fontSize: 11, fontWeight: FontWeight.w600))),
-              ]),
-            ),
-            Container(
               decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
               margin: const EdgeInsets.symmetric(horizontal: 12),
               padding: const EdgeInsets.all(12),
