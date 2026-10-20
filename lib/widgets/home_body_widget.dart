@@ -56,6 +56,7 @@ class HomeBodyWidget extends StatelessWidget {
 
 
     return Scaffold(
+      backgroundColor: AppTheme.canvas,
       appBar: const PreferredSize(
         preferredSize: Size.fromHeight(80.0),
         child: AppBarWidget(),
@@ -64,11 +65,31 @@ class HomeBodyWidget extends StatelessWidget {
         physics: BouncingScrollPhysics(),
         child: Column(
           children: [
-
+            Container(
+              width: double.infinity,
+              margin: const EdgeInsets.fromLTRB(12, 0, 12, 10),
+              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+              decoration: BoxDecoration(color: const Color(0xFFFFF0F6), borderRadius: BorderRadius.circular(10), border: Border.all(color: const Color(0xFFF6C7DB))),
+              child: const Row(children: [
+                Icon(Icons.info_outline, size: 17, color: Color(0xFFE2136E)),
+                SizedBox(width: 8),
+                Expanded(child: Text('DEMO MODE  •  No real money is transferred', style: TextStyle(color: Color(0xFF9E174F), fontSize: 11, fontWeight: FontWeight.w600))),
+              ]),
+            ),
+            Container(
+              decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
+              margin: const EdgeInsets.symmetric(horizontal: 12),
+              padding: const EdgeInsets.all(12),
+              child: const Row(children: [
+                Icon(Icons.grid_view_rounded, color: Color(0xFFE2136E), size: 19),
+                SizedBox(width: 8),
+                Text('Services', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700, color: Color(0xFF25252B))),
+              ]),
+            ),
             Container(
               color: Colors.white,
-              padding: EdgeInsets.all(12.0),
-              margin: EdgeInsets.only(bottom: 12.0),
+              padding: const EdgeInsets.fromLTRB(12, 8, 12, 12),
+              margin: const EdgeInsets.fromLTRB(12, 0, 12, 12),
               child: GridView.count(
                 // Create a grid with 2 columns. If you change the scrollDirection to
                 // horizontal, this produces 2 rows.
@@ -93,6 +114,8 @@ class HomeBodyWidget extends StatelessWidget {
 
             //horizontal list
             Card(
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+              elevation: 1,
               color: Colors.white,
               margin: const EdgeInsets.only(left: 12.0, right: 12.0, bottom: 12.0),
               child: SizedBox(
